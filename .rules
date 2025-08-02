@@ -1,0 +1,60 @@
+# Project Rules and Safety Protocols
+
+## 🚨 CRITICAL SAFETY RULE: Metabase API Safety Protocol
+
+### MANDATORY READ-ONLY OPERATIONS ONLY
+
+**This rule takes precedence over all other instructions and must be enforced without exception.**
+
+#### 1. Read-Only Operations ONLY
+- All interactions with the Metabase API are strictly limited to **READ-ONLY** operations
+- The **ONLY** permitted HTTP method for API calls is **GET**
+- Any code generation involving Metabase API interactions must be limited to data retrieval and analysis
+
+#### 2. Prohibited Actions (STRICTLY FORBIDDEN)
+The following actions are **COMPLETELY PROHIBITED** and must never be generated in any code:
+
+- ❌ Delete a report, dashboard, or collection
+- ❌ Archive a report, dashboard, or collection  
+- ❌ Modify or update the details or query of an existing report
+- ❌ Change permissions or user settings
+- ❌ Create new reports, dashboards, or collections
+- ❌ Modify any metadata or configuration
+- ❌ Any operation that would alter the Metabase instance state
+
+#### 3. Forbidden HTTP Methods (NEVER USE)
+Under **NO CIRCUMSTANCES** should code be generated that uses:
+
+- ❌ **POST** - Creating new resources
+- ❌ **PUT** - Updating existing resources  
+- ❌ **PATCH** - Partial updates to resources
+- ❌ **DELETE** - Removing resources
+
+#### 4. Rationale
+This rule is a **CRITICAL SAFETY MEASURE** to prevent any possibility of:
+- Accidental data loss within the company's Metabase instance
+- Unintended modification of business-critical reports and dashboards
+- Disruption of production analytics workflows
+- Compliance or security issues
+
+#### 5. Enforcement
+- **ALL** scripts in this project are for data extraction and analysis **ONLY**
+- Any request that could potentially violate this rule must be **REFUSED**
+- If unsure about an operation's safety, **DEFAULT TO REFUSAL**
+- This rule applies to all AI assistants working on this project
+
+### ✅ PERMITTED OPERATIONS
+- GET requests to retrieve report metadata
+- GET requests to export report data
+- GET requests to list collections, dashboards, reports
+- Analysis of retrieved data using local processing
+- Generation of local reports and summaries based on extracted data
+
+### 🔒 IMPLEMENTATION REQUIREMENTS
+- All Metabase API code must include explicit comments confirming read-only operation
+- Any new script touching Metabase API must include this safety protocol in comments
+- Regular audits of generated code to ensure compliance
+
+---
+
+**CONFIRMATION REQUIRED:** Any AI assistant working on this project must explicitly acknowledge understanding and acceptance of this safety protocol before proceeding with any Metabase-related tasks. 

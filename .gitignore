@@ -1,0 +1,118 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# CRITICAL SECURITY: API Keys and Sensitive Config
+*.env
+*_config.env
+metabase_config.env
+gemini_config.env
+**/config/*.env
+**/*_key*
+**/*_secret*
+**/*_token*
+
+# Logs (contain potentially sensitive business data)
+*.log
+logs/
+*.log.*
+
+# Temporary and Processing Files
+temp_*.xlsx
+EMERGENCY_BACKUPS/
+BULLETPROOF_STATE.json
+*_temp.xlsx
+*_backup.xlsx
+*_recovery.xlsx
+
+# Large Excel Files (optional - comment out if you want to include them)
+# *.xlsx
+# *.xls
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# PyCharm
+.idea/
+
+# Project-specific temporary files
+**/temp_progress_*.xlsx
+**/*_temp_*
+processing_state.json
+recovery_*.json 
